@@ -2,7 +2,7 @@
   /* 전체 */
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
-  width: 300px;
+
   margin: 0 auto;
   border: none;
   border-radius: 5px;
@@ -15,14 +15,21 @@ body {
 
 .login-form {
   /*아이디,비번, 버튼 */
+  width: 300px;
   background-color: #eeeff1;
-  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 50px;
 }
 
 .text-field {
   /*아이디,비번*/
+  width: 100%;
   font-size: 14px;
+  border: none;
   margin-bottom: 10px;
+  padding: 10px;
   padding: 20px 20px 10px 20px;
 }
 
@@ -32,11 +39,11 @@ body {
   margin-bottom: 30px;
   color: #eeeff1;
   padding: 10px;
+  width: 100%;
 }
 
 .links {
   text-align: center;
-  padding-bottom: 20px;
 }
 
 .links a {
