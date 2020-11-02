@@ -1,27 +1,45 @@
 * {
+  /* 전체 */
   box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
 }
 
 body {
   margin: 0;
-  background-color: #1BBC9B;
+  background-color: #1bbc9b;
 }
 
 .login-form {
+  /*아이디,비번, 버튼 */
+  background-color: #eeeff1;
+  padding: 0 20px;
 }
 
 .text-field {
+  /*아이디,비번*/
   font-size: 14px;
+  margin-bottom: 10px;
+  padding: 20px 20px 10px 20px;
 }
 
 .submit-btn {
   font-size: 14px;
+  background-color: #1bbc9b;
+  margin-bottom: 30px;
+  color: #eeeff1;
+  padding: 10px;
 }
 
 .links {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .links a {
   font-size: 12px;
+  color: #9b9b9b;
 }
