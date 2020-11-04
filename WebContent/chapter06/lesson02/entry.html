@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>고양이</title>
+<style type="text/css">
+#main{
+	width: 600px;
+	margin: 0 auto;
+	color: navy;
+}
+h1{
+	color: black;
+}
+
+</style>
+</head>
+<body>
+	<div id="main">
+	<form action="#" id="entryForm" method="post">
+	<h1>고양이 사진 투고 형식</h1>
+	필요 사항을 기입한 후 투고 버튼을 눌러 주세요.
+		<table border="1">
+			<tr>
+				<th>고양이 이름 :</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>주소 :</th>
+				<td><select name="pref">
+						<option selected disabled hidden>선택해 주세요</option>
+						<!--선택창에 안보이게 하기-->
+						<option>서울</option>
+						<option>광주</option>
+						<option>대구</option>
+						<option>부산</option>
+						<option>대전</option>
+						<option>울산</option>
+						<option>제주도</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th>성별 :</th>
+				<td><input type="radio">남자 <input type="radio">여자
+				</td>
+			</tr>
+			<tr>
+				<th>좋아하는 것 :</th>
+				<td><input type="checkbox" name="like1">생선 <input type="checkbox" name="like2">고기
+					<input type="checkbox" name="like3">우유 <input type="checkbox" name="like4">바삭바삭과자
+					<input type="checkbox" name="like5">통조림 <input type="checkbox" name="like6">통통젤리
+
+				</td>
+
+			</tr>
+			<tr>
+				<th>사진 :</th>
+				<td><input type="file" name="photo"></td>
+			</tr>
+			<tr>
+				<th>기르는 주인 이름 :</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>메일 주소 :</th>
+				<td><input type="email"></td>
+			</tr>
+			<tr>
+				<th>코멘트 :</th>
+				<td><textarea name="comment" rows="2" cols="40"></textarea></td>
+			</tr>
+		</table>
+		<input type="reset" value="취소"> <input type="submit" value="투고">
+	</div>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
