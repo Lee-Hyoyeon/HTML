@@ -1,16 +1,22 @@
+@font-face {
+  src: url("../fonts/BMJUA_otf.otf");
+  font-family: jau;
+}
+
 * {
   box-sizing: border-box;
   background-color: #f0e8d9;
   width: 300px;
   margin: 0 auto;
   text-align: center;
+  font-family: jau;
 }
-#top {
+h1 {
   font-size: 64px;
   margin: 75px auto 30px;
   color: #58595b;
 }
-#medd {
+h2 {
   font-size: 32px;
   margin: 30px 0 75px 0;
   color: #58595b;
