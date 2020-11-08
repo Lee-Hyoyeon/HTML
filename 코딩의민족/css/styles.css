@@ -6,37 +6,40 @@
 * {
   box-sizing: border-box;
   background-color: #f0e8d9;
-  width: 300px;
+  /*width: 300px;*/
   margin: 0 auto;
-  text-align: center;
   font-family: jau;
 }
 h1 {
+  text-align: center;
   font-size: 64px;
   margin: 75px auto 30px;
   color: #58595b;
 }
 h2 {
   font-size: 32px;
-  margin: 30px 0 75px 0;
+  text-align: center;
+  margin-bottom: 75px;
   color: #58595b;
 }
 .menu {
   background-color: white;
   width: 300px;
-  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
-.a {
+.menu h3 {
+  color: #58595b;
   font-size: 32px;
-  color: #58595b;
 }
-.b {
-  font-size: 16px;
+.menu p {
   color: #58595b;
-}
-.c {
   font-size: 16px;
+}
+.menu a {
   color: #0000ee;
+  font-size: 16px;
+  text-decoration: none;
 }
