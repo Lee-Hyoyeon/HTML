@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+
+form fieldset {
+margin: 10px 0;
+}
+
+form legend {
+font-size: 18px;
+color: #0066ff;
+font-weight: 600;
+}
+
+form label.reg {
+font-size: 14px;
+width: 120px;
+float: left;
+}
+
+form label em{
+	font-size: 15px;
+	color: red;
+	font-weight: 800;
+}
+form ul li{
+	list-style: none;
+	margin: 10px,0;
+		
+}
+form fieldset.sendform{
+	text-align: center;
+}
+</style>
+
+<body>
+<form action="">
+	<fieldset class="login">
+		<legend>로그인</legend>
+			<label for="user_id">아이디</label>
+				<input type="text" id="user_id" size="10" autofocus>
+			<label for="user_pw">비밀번호</label>
+				<input type="password" id=user_pw size="10" >
+				
+			<input type="submit" value="로그인  ">
+	</fieldset>
+	<fieldset  class="register">
+		<legend>가입하기</legend>
+			<ul>
+				<li>
+					<label class="reg" for="new_id">아이디<em>*</em> </label>
+					<input type="text" id="new_id" size="20" autocomplete="on" required > <!-- 자동완성 on쓰겠다. -->
+				</li>
+				<li>
+					<label class="reg" for="new_pw1">비밀번호<em>*</em> </label>
+					<input type="password" id="new_pw1" size="20" required  > 
+				</li>
+				<li>
+					<label class="reg" for="new_pw2">비밀번호 확인<em>*</em> </label>
+					<input type="password" id="new_pw2" size="20" required >
+				</li>
+				<li>
+					<label class="reg" for="user_name">아이디<em>*</em> </label>
+					<input type="text" id="user_name" size="20" required >
+				</li>
+				<li>
+					<label class="reg" for="user_email">메일주소<em>*</em> </label>
+					<input type="email" id="user_email" size="20" required >
+				</li>
+				<li>
+					<label class="reg" for="user_tel">전화번호<em>*</em> </label>
+					<input type="tel" id="user_tel" size="20" required >
+				</li>
+			</ul>
+	
+	</fieldset>
+	<fieldset class="easys">
+		<legend>미래테크</legend>
+			<textarea name="intro" rows="5" cols="60">
+			열심히 일하는 사람들의 열정을 알아 주는 곳 - 미래태크
+			우리는 채용을 하기 전에 다시 물어봅니다.
+			"얼마나 최선을 다했는가?"
+			성실하게 , 직장에서 최선을 다하는 모습을 보고 싶습니다.
+			미래테크와 함께 미래를 펼쳐 나아가 봅시다 
+			</textarea>
+	</fieldset>
+	<fieldset class="sendform">
+		<input type="submit" value="가입하기">
+		<input type="reset" value="다시입력">
+	
+	</fieldset>	
+	
+
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

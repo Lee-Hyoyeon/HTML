@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/css_test.css">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- ul {
+   list-style: none;
+}
+
+form fieldset {
+   margin-bottom: 25px;
+   line-height: 25px;
+}
+
+form legend {
+   font-size: 20px;
+   font-weight: 800;
+   color: blue;
+}
+
+form label {
+   font-size: 14px;
+   font-weight: bold;
+   width: 110px;
+   float: left; 라벨의 왼쪽 정렬
+   margin-right: 10px;
+}
+ -->
+
+</head>
+<body>
+<div class="container"> <!-- block -->
+   <h1>상품 주문서</h1>
+   <form action="">
+      <fieldset>
+         <legend>개인정보</legend>
+         <ul>
+            <li><label for="uname" class="title">이름</label> <input
+               type="text" id="uname" placeholder="여백없이 입력" required></li>
+         </ul>
+         <ul>
+            <li><label for="tel1" class="title">연락처</label> <input
+               type="tel" id="tel1" placeholder="연락 가능한 번호"></li>
+         </ul>
+      </fieldset>
+
+      <fieldset>
+         <legend>배송지 정보</legend>
+         <ul>
+            <li><label for="addr" class="title">주소</label> <input
+               type="text" id="addr" size="40" required></li>
+         </ul>
+         <ul>
+            <li><label for="tel2" class="title">전화번호</label> <input
+               type="tel" id="tel2" required></li>
+         </ul>
+         <ul>
+            <li><label for="comment" class="title">메모</label> <textarea
+                  cols="40" rows="3" id="comment"></textarea></li>
+         </ul>
+      </fieldset>
+    <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+               <li><input type="checkBox" value="gua">과테말라 안티구아 100g
+                  <input type="number" id="gua" value="0" min="0" max="10">개
+            </ul>
+            <ul>
+               <li><input type="checkBox" value="indo">인도네시아 만델링 100g
+                  <input type="number" id="indo" value="0" min="0" max="10">개
+            </ul>
+            <ul>
+               <li><input type="checkBox" value="jeju">탐라는도다(블렌딩)
+                  100g <input type="number" id="jeju" value="0" min="0" max="10">개
+            </ul>
+         </fieldset>
+      <div class="centered">
+         <input type="submit" value="주문하기"> <input
+            type="reset" value="다시작성">
+      </div>
+   </form>
+   </div>
+   
+   </body>
+</html>

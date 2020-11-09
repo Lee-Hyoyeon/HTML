@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,4 +52,59 @@ form ul li {
 		</fieldset>
 	</form>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	background-color: #fff;
+}
+
+form legend {
+	font-size: 15px;
+	width: 150px;
+}
+
+form label.reg {
+	font-size: 14px;
+	width: 150px;
+	float: left;
+}
+
+form ul li {
+	list-style: none;
+	margin: 35px 20px 50px 20px;
+}
+
+#member, #stuffs {
+	color: red;
+	width: 50px;
+}
+</style>
+
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend> 등록 정보</legend>
+			<ul>
+				<li><label class="reg" for="member">참여인원<small>(최대10명)</small>
+				</label> <input type="number" id="member" value="1" min="0" max="10"
+					step="1"></li>
+
+				<li><label class="reg" for="stuffs">지원물품<small>(인당5개)</small>
+				</label> <input type="number" id="stuffs" value="1" min="0" max="50"
+					step="5"></li>
+
+				<li><label class="reg" for="satis">희망 단계<small>(하,중,상)</small>
+				</label> <input type="range" id="satis" value="1" min="1" max="3"></li>
+
+			</ul>
+		</fieldset>
+	</form>
+</body>
+>>>>>>> e0740fed2bf9f1d138995e1675463b8a9a33e840
 </html>
