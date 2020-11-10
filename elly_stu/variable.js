@@ -114,4 +114,4 @@ text = '7'+ 5;
 console.log(`value: ${text}, typye:${typeof text}`);  //string 
 text = '8' / '2';
 console.log(`value: ${text}, typye:${typeof text}`);  //number
-//console.log(text.charAt(0)); //이거 모르겠어 ..
+console.log(text.charAt(0)); 
