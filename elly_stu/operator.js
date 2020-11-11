@@ -1,9 +1,7 @@
 //1. String concatenation
 console.log('my'+'cat');
 console.log('1'+ 2);
-console.log(`string literals:
-''''' ;; 
-1+2= ${1+2}`);
+console.log(`string literals:1+2= ${1+2}`); //백탭을 넣으면 문장이 그대로 나옴
 
 //2.numeric operators
 console.log(1+1);
@@ -16,7 +14,7 @@ console.log(2**3); //exponentiation
 //3. Increment and decrement operators
 let counter =2;
 
-const preIncrement = ++counter;
+const preIncrement = ++counter;  //전위 연산자 
 //counter =counter+1;
 //preincrement = counter;
 console.log(`preIncrement: ${preIncrement}, counter: ${counter}`);
@@ -75,7 +73,7 @@ const numberFive = 5;
 console.log(StringFive == numberFive); //t
 console.log(StringFive != numberFive); //f
 
-// ===strict equality, no type conversion //주로 이것을 사용 
+// ===strict equality, no type conversion //타입이 다르면 다른친구 
 console.log(StringFive === numberFive); //f
 console.log(StringFive !== numberFive); //t
 
@@ -110,7 +108,7 @@ if(name === 'hy') {
 //condition ? value1 : value2;
 console.log(name === 'hy' ? 'yes' : 'no' ); 
 
-//10. swith 
+//10. switch 
 const browser = 'IE';
 switch (browser) {
     case 'IE':
@@ -131,7 +129,7 @@ while(i>0) {
     console.log(`while: ${i}`);
     i--;
 }
-
+//-------------------------------------
 do{
     console.log(`do while: ${i}`);
     i--;
@@ -157,7 +155,7 @@ for(let i=0; i<10; i++){
         if(i%2 ===0){
             continue;
         }
-        console.log(`q1. ${i}`);
+        console.log(`i= ${i}`);
     }
 
 //2. 0~10 8만나면 break;
