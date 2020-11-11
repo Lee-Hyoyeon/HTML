@@ -28,7 +28,7 @@ console.log(globalName);
 console.log(age);
 
 
-// 3. constants (only read) 값은 선언동시에 할당하면 변경 못함.
+// 3. constant (only read) 값은 선언동시에 할당하면 변경 못함.
 // favor immutable data type always
 
 const dayInWeek = 7;
