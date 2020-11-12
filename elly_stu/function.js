@@ -118,9 +118,22 @@ const printno= function print(){
 randomQuiz("wrong",printyes, printno);
 randomQuiz('love you', printyes, printno);
 
-//Arrow function
-//always anonymous
+//Arrow function 
+//always anonymous(항상 이름 없는 익명함수 )
 const simplePrint  = function(){
     console.log('simplePrint');
 }
+//간단하게 작성 하는 법!!
+/*
 const simplePrint = () => console.log('simplePrint'); 
+const add =(a,b)=> a , b;
+*/
+
+//iife: immediately invoked function expression
+// 선언함과 동시에 바로 호출가능
+(function hello(){
+    console.log('iife');
+}) ();
+
+//** Quiz **
+
