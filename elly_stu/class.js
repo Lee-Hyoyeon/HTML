@@ -55,7 +55,48 @@ class Article{
     constructor (articleNumber){ 
         this.articleNumber = articleNumber;
     }
-    static printPublisher(){
+    static printPublisher(){  
         console.log(Article.publisher);
     }
 }
+const article1 = new Article(1);
+const article2 = new Article(2);
+//console.log(article1.publisher); //오브젝트 안에 publisher은 값을 몰라서 undefined로 나옴
+console.log(Article.publisher);
+//static은 (Article)클래스 자체에 붙어있음 
+Article.printPublisher(); 
+
+
+//5. 다형성
+//Inheritance  상속
+//a way for one class to extend another class
+class Shape{
+    constructor (width,height,color){
+        this.width=width;
+        this.height=height;
+        this.color=color;
+    }
+    draw(){
+        console.log(`drawing ${this.color} color of`);
+    }
+    getArea(){
+        return this.width * this.height;
+    }
+}
+
+class Rectangle extends Shape{
+}
+class Triangle extends Shape{
+    getArea(this.width ) {
+        
+    }
+}
+const rectangle = new Rectangle(20,20,'blue');
+rectangle.draw();
+console.log(rectangle.getArea());
+
+
+const triangle = new Triangle(20,20,'red');
+triangle.draw();
+console.log(triangle.getArea());
+
