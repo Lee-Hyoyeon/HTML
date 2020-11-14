@@ -83,12 +83,15 @@ class Shape{
         return this.width * this.height;
     }
 }
-
 class Rectangle extends Shape{
 }
 class Triangle extends Shape{
-    getArea(this.width ) {
-        
+    draw(){     //오버라이딩 
+        super.draw(); //부모에 있는 draw함수 호출 
+        console.log('🎁');
+    }
+    getArea() {   //다형성  //오버라이딩
+        return (this.width * this.height) /2;
     }
 }
 const rectangle = new Rectangle(20,20,'blue');
@@ -99,4 +102,12 @@ console.log(rectangle.getArea());
 const triangle = new Triangle(20,20,'red');
 triangle.draw();
 console.log(triangle.getArea());
+
+//6.Class checking : instanceOf 
+console.log(rectangle instanceof Rectangle); 
+//rectangle이 오브젝트가 Rectangle클래스를 이용해서 만든건지아닌지!?
+console.log(triangle instanceof Rectangle);
+console.log(triangle instanceof Triangle);
+console.log(triangle instanceof Shape);
+console.log(triangle instanceof Object); //오브젝트의 인스턴스이다! T
 
