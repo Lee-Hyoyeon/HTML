@@ -1,7 +1,7 @@
 //1. String concatenation
 console.log('my'+'cat');
-console.log('1'+ 2);
-console.log(`string literals:1+2= ${1+2}`); //백탭을 넣으면 문장이 그대로 나옴
+console.log('1'+ 2); //12
+console.log(`string literals:1+2= ${1+2}`);
 
 //2.numeric operators
 console.log(1+1);
@@ -13,7 +13,6 @@ console.log(2**3); //exponentiation
 
 //3. Increment and decrement operators
 let counter =2;
-
 const preIncrement = ++counter;  //전위 연산자 
 //counter =counter+1;
 //preincrement = counter;
@@ -37,12 +36,12 @@ console.log(10>6); //greater than
 console.log(10>=6); // greater than or equal
 
 
-//6.Logical operators : ||(or) , &&(and), !(not)
+//6.Logical operators : ||(or) , &&(and), !(not) 
 const value1 = true;
 const value2 = 4<2;
 
 // ||(or) , finds the first truthy value
-console.log(`or: ${value1 || value2 || check()}`);
+console.log(`or: ${value1 || value2 || check()}`);  //check는 true를 리턴함.
 
 // &&(and) , finds the first falsy value
 console.log(`and: ${value1 && value2 &&check()}`);
@@ -51,7 +50,7 @@ console.log(`and: ${value1 && value2 &&check()}`);
 //nullableobject && nullableobject.something
 
 //if(nullobject != null) {
-//    nullableobject.something;
+//    nullableobject.something; 
 //    }
 
 function check() {
@@ -70,7 +69,7 @@ const StringFive = '5';
 const numberFive = 5;
 
 // == loose equality, with type conversion
-console.log(StringFive == numberFive); //t
+console.log(StringFive == numberFive); //t //둘다 같은 5이기에 true 
 console.log(StringFive != numberFive); //f
 
 // ===strict equality, no type conversion //타입이 다르면 다른친구 
@@ -80,18 +79,18 @@ console.log(StringFive !== numberFive); //t
 //object equality by reference
 const ellie1= {name: 'ellie'};
 const ellie2= {name: 'ellie'};
-const ellie3= ellie1;
-console.log(ellie1==ellie2); //f
-console.log(ellie1===ellie2); //f
-console.log(ellie1===ellie3); //t
+const ellie3= ellie1; 
+console.log(ellie1==ellie2); //f    레퍼런스 다름
+console.log(ellie1===ellie2); //f   레퍼런스 값이 달라서 
+console.log(ellie1===ellie3); //t    
 
 //quiz@@@@
-console.log(0 ==false); // t
-console.log(0 ===false); //f
-console.log("" ==false); //t
-console.log("" ===false); //f
-console.log(null == undefined); //t
-console.log(null ===undefined); //f   
+console.log(0 ==false); // t  
+console.log(0 ===false); //f    불리언 타입이아니니까 
+console.log("" ==false); //t    
+console.log("" ===false); //f   불리언타입 아님
+console.log(null == undefined); //t     
+console.log(null ===undefined); //f     
 
 // 8. Conditional operators: if
 //if, else if , else
@@ -109,7 +108,7 @@ if(name === 'hy') {
 console.log(name === 'hy' ? 'yes' : 'no' ); 
 
 //10. switch 
-const browser = 'IE';
+const browser = 'Chrome';
 switch (browser) {
     case 'IE':
         console.log('go away');
@@ -151,10 +150,7 @@ for(let i=0; i<10; i++){
 }
 
 // quiz 1. 0~10 짝수출력 continue
-    for(let i=0; i<=10; i++){
-        if(i%2 ===0){
-            continue;
-        }
+    for(let i=0; i<=10; i+=2){
         console.log(`i= ${i}`);
     }
 
