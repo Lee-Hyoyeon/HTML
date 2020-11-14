@@ -7,6 +7,7 @@
 funtion name(param1, param2) {body...return; }
 함수 nameing: dosomethig,command, verb 
 하나의 함수는 한가지 일만하게 만듦
+function 은 object이다. 
 */
 function log(message){
     console.log(message);
