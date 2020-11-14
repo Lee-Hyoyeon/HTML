@@ -7,7 +7,7 @@
 funtion name(param1, param2) {body...return; }
 함수 nameing: dosomethig,command, verb 
 하나의 함수는 한가지 일만하게 만듦
-function 은 object이다. 
+function 은 object의 일정이다. 
 */
 function log(message){
     console.log(message);
@@ -18,6 +18,7 @@ log('hello#');
     primitive parameters: 메모리에 value 그대로 전달
     object parameters:  메모리에 reference 전달
 */
+
 function changeName(obj){
     obj.name ='coder';
 }
@@ -26,14 +27,13 @@ changeName(ellie);
 console.log(ellie);
 
 /*3.default parameters(added in ES6)*/
-
 function showMess(message, from='unknown'){  //from이 정의되지 않았을때 unknown나옴 
     console.log(`${message} by ${from}`);
 }
 showMess('hi','hyoyeon');
 
 //4. rest parameters 
-function printAll(...args){  //배열 형태로 전달 
+function printAll(...args){      //배열 형태로 전달 
     for(let i=0;i< args.length; i++){
         console.log(args[i]);
     }
@@ -44,7 +44,7 @@ function printAll(...args){  //배열 형태로 전달
     //tip 2
     args.forEach((arg)=>console.log(arg));
 }
-printAll('dream','happy',"hyo");
+    printAll('dream','happy',"hyo");
 
 
 //5.local scope (유리창 틴트)
@@ -82,14 +82,14 @@ function upgradeUser(user){
     can be assigned as a value to variable
     can be passed as an argument to ther functions
     can be returned by another function 
+    변수에 할당 되고 파라미터에 전달되고 리턴값도 되고 
 */
 
 
-
-/*1. function expression 
+/*1. function expression(표현)
     a function declaration canbe called earlier than it is defiend.(hosted)
     a function expression is created when the execution reaches it
-*/
+*/ 
 const print= function( ){ //함수 선언 동시에 print에 할당 
     // 함수이름 없는거 anonymous function  (익명 함수?? )
     console.log('print#');
@@ -108,18 +108,19 @@ function randomQuiz(answer, printyes, printno){
         printno();
     }
 }
-const printyes = function(){
+const printyes = function(){ //anonymous function
     console.log("yes!");
 }
 
 //named function
-const printno= function print(){
+const printno= function print(){ //named function 
     console.log("no!");
 }
 randomQuiz("wrong",printyes, printno);
 randomQuiz('love you', printyes, printno);
 
-//Arrow function 
+//----------------------------------------------------
+//Arrow function 화살함수 
 //always anonymous(항상 이름 없는 익명함수 )
 const simplePrint  = function(){
     console.log('simplePrint');
@@ -130,7 +131,7 @@ const simplePrint = () => console.log('simplePrint');
 const add =(a,b)=> a , b;
 */
 
-//iife: immediately invoked function expression
+//IIFE: immediately invoked function expression
 // 선언함과 동시에 바로 호출가능
 (function hello(){
     console.log('iife');
