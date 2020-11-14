@@ -49,6 +49,9 @@ Mutable(가변) data types: all objects by default are mutable in JS
 ▣ primitive타입(더이상 나눠질수 없는 한가지 아이템)
                 => single item: number, string, boolean, null, undefined, symbol
 ▣ object=> box container
+primitive 타입은 값자체가 메모리에 저장  let name ->ellie 저장
+object 타입은 너무 커서 메모리에 한번에 올라갈수 없음. reference를 통해 메모리 가리킴
+
 function=> first-class function (변수에 할당가능 , 인자로도 전달 가능,리턴 타입으로도 가능하다라는 뜻)
 */
 
@@ -106,11 +109,6 @@ console.log(gSymbol1===gSymbol2); //true
 console.log(`value: ${symbol1.description}, type:${typeof symbol1}`); //.description을 이용해서 스트링으로 변환후 출력하기!
 
 
-//object, real-life object, data structure
-const hyoyeon ={name: 'hyoyeon', age: 20};
-hyoyeon.age = 22;  //hyoyeon은 접근 안되지만 안에 내용은 접근 가능
-console.log(`hyoyeon.age 변경 ${hyoyeon.age}`);   //22
-
 // 5. Dynamic typing: dynamically typed langyage
 let text = 'hello';
 console.log(text.charAt(0));  //h이 출력됨
@@ -122,3 +120,9 @@ console.log(`value: ${text}, typye:${typeof text}`);
 text = '8' / '2';  //number
 console.log(`value: ${text}, typye:${typeof text}`);  
 // console.log(text.charAt(0)); 후에 이렇게 하면 에러남 이미 숫자로 바꿔놔서  
+
+
+//object, real-life object, data structure
+const hyoyeon ={name: 'hyoyeon', age: 20};
+hyoyeon.age = 22;  //hyoyeon은 접근 안되지만 안에 내용은 접근 가능
+console.log(`hyoyeon.age 변경 ${hyoyeon.age}`);   //22
