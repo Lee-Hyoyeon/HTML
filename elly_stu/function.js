@@ -137,3 +137,14 @@ const add =(a,b)=> a , b;
 
 //** Quiz **
 
+switch(command){ 
+    case '더하기':
+        return a+b;
+    case '빼기':
+        return a-b;
+    case '곱하기':
+        return a*b;
+    case '나누기':
+        return a/b;
+}
+console.log('곱하기',2,3);
