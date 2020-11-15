@@ -1,5 +1,16 @@
 'use strict'
-/*템플릿에 속함 */
+/*
+클래스는 데이터가 있지 않고 틀만 템플릿만 정의해놓고 한번만 선언한다.
+object는 클래스에 실제 데이터를 넣어 만드는것 
+[class]
+    -template
+    -declare once
+    -no data in
+[Object]
+    -instance of a class 
+    -created many times
+    - data in
+*/
 
 //1. class declarations (선언) 
 class Person{
@@ -14,7 +25,7 @@ class Person{
     }
 }
 
-const ellie = new Person('ellie',20);
+const ellie = new Person('ellie',20);  //새로운 object를 만드는 
 console.log(ellie.name);
 console.log(ellie.age); 
 ellie.speak();  // ellie: hello!
@@ -31,7 +42,7 @@ class User{
     }
 
     set age(value){  //새로운 값을 받으면 
-        this._age=value <0 ? 0: value;  //나이가 음수이면 0 
+        this._age=value <0 ? 0: value;  //입력받은 나이가 음수이면 0 
     }
 }
 
@@ -43,7 +54,7 @@ console.log(user1.age);
 //too soon!
 class Experiment{
     publicField = 2;
-    #privateField=0;
+    #privateField=0;  //#은 클래스내부에서만 접근.변경 가능
 }
 const experiment = new Experiment();
 console.log(experiment.publicField);  //2
@@ -66,9 +77,8 @@ console.log(Article.publisher);
 //static은 (Article)클래스 자체에 붙어있음 
 Article.printPublisher(); 
 
-
 //5. 다형성
-//Inheritance  상속
+//Inheritance  (상속)
 //a way for one class to extend another class
 class Shape{
     constructor (width,height,color){
@@ -84,6 +94,9 @@ class Shape{
     }
 }
 class Rectangle extends Shape{
+    draw(){      
+        console.log('👙');
+    }
 }
 class Triangle extends Shape{
     draw(){     //오버라이딩 
