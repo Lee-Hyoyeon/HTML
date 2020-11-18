@@ -13,8 +13,8 @@ console.log(fruits[0]);
 
 //3.Looping over an array
 //print all fruits  ((for of))
-for(let fruit of fruits){
-    console.log(fruit);
+for(let fr of fruits){
+    console.log(fr);
 }
 
 //forEach
