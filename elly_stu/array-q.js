@@ -15,7 +15,7 @@
 }
 
   // Q3. make this array look like this: [5, 4, 3, 2, 1]  
-  //배열을 거꾸로
+  //배열을 거꾸로 바꿀때 사용 
 {
     const array = [1, 2, 3, 4, 5];
     let result=array.reverse();  
@@ -41,6 +41,7 @@ class Student {
         this.score = score;
     }
 }
+
 const students = [
     new Student('A', 29, true, 45),
     new Student('B', 28, false, 80),
