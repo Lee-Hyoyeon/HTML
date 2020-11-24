@@ -46,8 +46,12 @@ a {
   text-align: center;
 }
 
-#products {
-}
+/* #products {
+} */
 
 #footer {
+  height: 20px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
 }
