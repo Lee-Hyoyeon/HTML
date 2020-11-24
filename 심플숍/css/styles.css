@@ -8,10 +8,46 @@ body {
   font-family: "Helvetica";
 }
 
-/* navbar */
+#navbar {
+  height: 60px;
+}
+#navbar img {
+  height: 20px;
+  vertical-align: middle;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+#top {
+  list-style: none;
+  float: right;
+  padding-right: 30px;
+}
+#top li {
+  float: left;
+  font-family: Helvetica;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0px 15px;
+}
+a {
+  text-decoration: none;
+  color: #545454;
+}
 
-/* hero header */
+#hero header {
+  height: 450px;
+}
+#line {
+  padding: 60px 0px;
+  font-size: 24px;
+  color: #545454;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-align: center;
+}
 
-/* products */
+#products {
+}
 
-/* footer */
+#footer {
+}
