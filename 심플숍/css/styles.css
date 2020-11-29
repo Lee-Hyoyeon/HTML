@@ -22,6 +22,7 @@ body {
   float: right;
   padding-right: 30px;
 }
+
 #top li {
   float: left;
   font-family: Helvetica;
@@ -46,29 +47,35 @@ a {
   text-align: center;
 }
 
-#products1 {
+.product {
   text-align: center;
   margin-bottom: 80px;
+  display: block;
+  float: left;
+  margin: 0 10px;
 }
-#products2 {
-  text-align: center;
-  margin-bottom: 80px;
+.name {
+  margin-top: 20px;
 }
-#products3 {
-  text-align: center;
+
+.product-list {
+  width: 750px;
+  margin: 0 auto;
 }
-.menu {
-  /* margin-right: 20px; */
-  display: inline;
-}
-.menu img {
+
+.product img {
   width: 225px;
   height: 225px;
 }
 
-#footer {
+#footer img {
   height: 20px;
+}
+#footer {
   text-align: center;
   margin-top: 120px;
   margin-bottom: 80px;
+}
+.clearfix {
+  clear: both;
 }
