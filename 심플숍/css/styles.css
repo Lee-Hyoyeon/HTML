@@ -49,8 +49,8 @@ a {
 
 .product {
   text-align: center;
-  margin-bottom: 80px;
-  display: block;
+  padding-bottom: 80px;
+  /* display: block; */
   float: left;
   margin: 0 10px;
 }
@@ -70,6 +70,7 @@ a {
 
 #footer img {
   height: 20px;
+  margin: 0 10px;
 }
 #footer {
   text-align: center;
