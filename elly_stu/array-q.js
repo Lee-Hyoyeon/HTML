@@ -1,13 +1,13 @@
 'use strict';
 
-// Q1. make a string out of an array   //배열을 그냥 문자열로
+// Q1. make a string out of an array   //배열을 문자열로 만들기 
 {
     const fruits = ['apple', 'banana', 'orange'];
-    const result= fruits.join("&");   //  join
+    const result= fruits.join(" & ");   //  join
     console.log(result);
 }
 
-  // Q2. make an array out of a string  //문자열을 배열로 
+  // Q2. make an array out of a string  //문자열을 배열로 만들기
 {
     const fruits = '🍎, 🥝, 🍌, 🍒';
     const re=fruits.split(",");      //split
