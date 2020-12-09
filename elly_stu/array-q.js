@@ -120,7 +120,7 @@ const students = [
     .join();      //배열자체를 리턴하기때문에 섞어서 호출 가능
   
   console.log(result);
-   
+
 }
 
   // Bonus! do Q10 sorted in ascending order
